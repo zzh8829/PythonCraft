@@ -1,0 +1,79 @@
+The system is: Windows - 6.2 - x86
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: F:/MinGW/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "F:/PythonCraft/level/bin/CMakeFiles/2.8.10.2/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: F:/MinGW/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "F:/PythonCraft/level/bin/CMakeFiles/2.8.10.2/CompilerIdCXX/a.exe"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: F:/MinGW/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "F:/PythonCraft/level/bin/CMakeFiles/2.8.10.2/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: F:/MinGW/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "F:/PythonCraft/level/bin/CMakeFiles/2.8.10.2/CompilerIdCXX/a.exe"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: F:/MinGW/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "F:/PythonCraft/level/bin/CMakeFiles/2.8.10.2/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: F:/MinGW/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "F:/PythonCraft/level/bin/CMakeFiles/2.8.10.2/CompilerIdCXX/a.exe"
+

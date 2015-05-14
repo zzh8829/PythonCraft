@@ -1,0 +1,10 @@
+logger = None
+gui = None
+mouse = None
+keyboard = None
+size = (0,0)
+folder = ""
+event = None
+resMgr = None
+theme = None
+DEBUG = False
