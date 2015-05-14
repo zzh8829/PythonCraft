@@ -9,25 +9,26 @@ Demo
 Features
 ========
 Reading original minecraft map file
+
 Putting/removing blocks
 
 Architecture
 ============
 Python:
 
-  Create windows with PyGame
+*  Create windows with PyGame
 
-  Create OpenGL context with PyOpenGL
+*  Create OpenGL context with PyOpenGL
 
-  Render environment and GUI
+*  Render environment and GUI
 
 
 
 C++:
 
-  Read map data
+ * Read map data
   
-  Render map
+ * Render map
 
 
 
