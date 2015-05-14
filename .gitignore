@@ -27,4 +27,6 @@
 *.out
 *.app
 
+__pycache__/
+CMakeFiles/
 saves/

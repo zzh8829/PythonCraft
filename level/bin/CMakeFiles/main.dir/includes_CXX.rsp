@@ -1,1 +1,0 @@
--IF:/lib/include -IF:/lib/sdl/include -IF:/lib/boost/include -IF:/Python32/include 

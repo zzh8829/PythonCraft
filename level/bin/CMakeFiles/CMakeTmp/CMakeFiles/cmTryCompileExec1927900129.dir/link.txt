@@ -1,3 +1,0 @@
-F:\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTryCompileExec1927900129.dir/objects.a
-F:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec1927900129.dir/objects.a @CMakeFiles\cmTryCompileExec1927900129.dir\objects1.rsp
-F:\MinGW\bin\gcc.exe         -Wl,--whole-archive CMakeFiles\cmTryCompileExec1927900129.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec1927900129.exe -Wl,--out-implib,libcmTryCompileExec1927900129.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
