@@ -6,8 +6,8 @@
 #include "Level.h"
 
 #include <SDL_opengl.h>
-#include <gl/gl.h>
-#include <gl/glu.h>
+#include <gl.h>
+#include <glu.h>
 
 #include "QuadBuilder.h"
 

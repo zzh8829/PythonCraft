@@ -1,6 +1,7 @@
 #include "BlockRender.h"
 #include "Texture.h"
 #include "TextureManager.h"
+
 using namespace std;
 BlockRender::BlockRender(Level* level, int x,int y,int z):
 mLevel(level)
@@ -410,24 +411,24 @@ bool BlockRender::renderBlock(int id,int x, int y,int z)
 		{
 			switch(block->renderType)
 			{
-			case Block::RenderType::NORMAL:
+			case Block::NORMAL:
 				renderBlockNormal(block,x,y,z);
 				break;
-			case Block::RenderType::FLOWER:
+			case Block::FLOWER:
 				renderBlockFlower(block,x,y,z);
 				break;
-			case Block::RenderType::TORCH:
+			case Block::TORCH:
 				renderBlockTorch(block,x,y,z);
 				break;
-			case Block::RenderType::STAIRS:
+			case Block::STAIRS:
 				renderBlockStairs(block,x,y,z);
 				break;
-			case Block::RenderType::LILYPAD:
+			case Block::LILYPAD:
 				if(shouldRender(block,x,y,z,1 ))renderBotFace(block,x,y,z,255,255,255);
 				break;
-			case Block::RenderType::DOOR:
+			case Block::DOOR:
 				break;
-			case Block::RenderType::NO:
+			case Block::NO:
 				break;
 			default:
 				renderBlockNormal(block,x,y,z);

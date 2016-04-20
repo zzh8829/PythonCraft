@@ -22,6 +22,6 @@
 
 #include <stdint.h>
 
-#include <tr1/unordered_map>
+#include <unordered_map>
 
 #endif

@@ -91,13 +91,30 @@ private:
 	std::string path;
 };
 
-#elif defined(__LINUX__)
+#else
 
-#error: Failed to implement directory listing.
+class FileFinder 
+{
+public:
+	static bool endswith(std::string str,std::string end)
+	{
+		if(str.size() >= end.size())
+		{
+			return str.compare(str.size()-end.size(),end.size(),end)==0;
+		}
+		return false;
+	}
 
-#else 
-
-#error: Failed to implement directory listing.
+	static std::string fileBaseName(std::string name)
+	{
+		int dpos=name.size();
+		while(dpos>0 && name[--dpos]!='.');
+		int spos=dpos;
+		while(spos>0 && (name[--spos]!='\\' && name[spos]!='/'));
+		//std::cout << name << " " << dpos <<" " << spos << " "<< std::endl;
+		return name.substr(spos+1,dpos-spos-1);
+	}
+};
 
 #endif
 

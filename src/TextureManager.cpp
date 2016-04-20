@@ -1,8 +1,10 @@
 #include "TextureManager.h"
 #include "png.h"
+#include "boost/filesystem.hpp"
 #include "FileFinder.h"
 #include "sdl_opengl.h"
 using namespace std;
+using namespace boost;
 
 TextureManager::TextureManager(string path):
 mPath(path)
@@ -52,36 +54,68 @@ Texture* TextureManager::getTexture(string name)
 	return mTexMap[name];
 }
 
-void TextureManager::loadTextures()
+void loadTextureRec(TextureManager* tm, filesystem::path dir_path)
 {
-	loadTextureRec(mPath);
+  if ( !filesystem::exists( dir_path ) ) return;
+  filesystem::directory_iterator end_itr; // default construction yields past-the-end
+  for ( filesystem::directory_iterator itr( dir_path );
+        itr != end_itr;
+        ++itr )
+  {
+    if(is_directory(itr->status()) )
+    {
+      loadTextureRec(tm, itr->path());
+    }
+    else if ( itr->path().extension() == "png" ) // see below
+    {
+    	string file = itr->path().string();
+    	tm->loadTexture(file);
+    	if(filesystem::exists(file + ".cfg"))
+    	{
+    		tm->loadTextureCfg(file);
+    	}
+    	else if(filesystem::exists(file + ".txt"))
+    	{
+    		tm->loadTextureTxt(file);
+    	}
+    }
+  }
 }
 
-void TextureManager::loadTextureRec(string name)
+void TextureManager::loadTextures()
 {
-	FileFinder fd(name);
-	string file = fd.filename();
-	while(file!="")
-	{
-		if(fd.isSubDir())
-		{
-			loadTextureRec(file);
-		}
-		if(FileFinder::endswith(file,".png"))
-		{
-			loadTexture(file);
-			if(FileFinder::exists(file+".cfg"))
-			{
-				loadTextureCfg(file);
-			} 
-			else if (FileFinder::exists(file+".txt"))
-			{
-				loadTextureTxt(file);
-			}
-		}
-		file = fd.next();
-	}
+	loadTextureRec(this, filesystem::path(mPath));
 }
+
+
+// void TextureManager::loadTextureRec(string name)
+// {
+// 	load_helper(path(name));
+
+// 	FileFinder fd(name);
+// 	string file = fd.filename();
+// 	while(file!="")
+// 	{
+// 		if(fd.isSubDir())
+// 		{
+// 			loadTextureRec(file);
+// 		}
+// 		if(FileFinder::endswith(file,".png"))
+// 		{
+			
+// 			if(FileFinder::exists(file+".cfg"))
+// 			{
+// 				loadTextureCfg(file);
+// 			} 
+// 			else if (FileFinder::exists(file+".txt"))
+// 			{
+// 				loadTextureTxt(file);
+// 			}
+// 		}
+// 		file = fd.next();
+// 	}
+// }
+
 int GetTextureInfo(int ColourType)
 {
 	int ret;

@@ -34,6 +34,7 @@ __pycache__/
 CMakeFiles/
 CMakeCache.txt
 
-saves/
+saves/*
+!saves/Lormieville/
 
 lib/

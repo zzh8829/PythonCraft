@@ -172,21 +172,21 @@ void RenderScene()
 	SDL_GL_SwapBuffers();
 }
 
-void recFolder(string name)
-{
-	FileFinder fd(name);
-	string file = fd.filename();
-	cout << file << endl;
-	while(file!="")
-	{
-		if(fd.isSubDir())
-		{
-			recFolder(file);
-		}
-		cout << FileFinder::fileBaseName(file) << endl;
-		file = fd.next();
-	}
-}
+// void recFolder(string name)
+// {
+// 	FileFinder fd(name);
+// 	string file = fd.filename();
+// 	cout << file << endl;
+// 	while(file!="")
+// 	{
+// 		if(fd.isSubDir())
+// 		{
+// 			recFolder(file);
+// 		}
+// 		cout << FileFinder::fileBaseName(file) << endl;
+// 		file = fd.next();
+// 	}
+// }
 
 int main(int argc, char* argv[])
 {
@@ -203,11 +203,11 @@ int main(int argc, char* argv[])
 		SDL_OPENGL|SDL_GL_DOUBLEBUFFER|SDL_HWSURFACE|SDL_RESIZABLE);
 	InitOpenGL();
 
-	TextureManager* t  = TextureManager::initialize("F:/Pythoncraft/Textures");
-	system("pause");
+	TextureManager* t  = TextureManager::initialize("textures");
+
 	//ResizeScreen(854,480);
 
-	Level* l = new Level("../../saves/", "broville");
+	Level* l = new Level("saves/", "city");
 
 	lr = new LevelRender(l);
 	

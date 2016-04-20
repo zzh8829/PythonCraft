@@ -19,7 +19,6 @@ public:
 	int loadPNG(std::string,int*,int*);
 	void loadTextures();
 	void loadTexture(std::string);
-	void loadTextureRec(std::string);
 	void loadTextureCfg(std::string);
 	void loadTextureTxt(std::string);
 

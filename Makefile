@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.5.0/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Zihao/Projects/Python/PythonCraft
+CMAKE_SOURCE_DIR = /Users/Zihao/projects/Python/PythonCraft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Zihao/Projects/Python/PythonCraft
+CMAKE_BINARY_DIR = /Users/Zihao/projects/Python/PythonCraft
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Zihao/Projects/Python/PythonCraft/CMakeFiles /Users/Zihao/Projects/Python/PythonCraft/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Zihao/projects/Python/PythonCraft/CMakeFiles /Users/Zihao/projects/Python/PythonCraft/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Zihao/Projects/Python/PythonCraft/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Zihao/projects/Python/PythonCraft/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,585 @@ boost_python/fast:
 	$(MAKE) -f CMakeFiles/boost_python.dir/build.make CMakeFiles/boost_python.dir/build
 .PHONY : boost_python/fast
 
+#=============================================================================
+# Target rules for targets named boost_filesystem
+
+# Build rule for target.
+boost_filesystem: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 boost_filesystem
+.PHONY : boost_filesystem
+
+# fast build rule for target.
+boost_filesystem/fast:
+	$(MAKE) -f CMakeFiles/boost_filesystem.dir/build.make CMakeFiles/boost_filesystem.dir/build
+.PHONY : boost_filesystem/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named boost_system
+
+# Build rule for target.
+boost_system: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 boost_system
+.PHONY : boost_system
+
+# fast build rule for target.
+boost_system/fast:
+	$(MAKE) -f CMakeFiles/boost_system.dir/build.make CMakeFiles/boost_system.dir/build
+.PHONY : boost_system/fast
+
+src/Block.o: src/Block.cpp.o
+
+.PHONY : src/Block.o
+
+# target to build an object file
+src/Block.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Block.cpp.o
+.PHONY : src/Block.cpp.o
+
+src/Block.i: src/Block.cpp.i
+
+.PHONY : src/Block.i
+
+# target to preprocess a source file
+src/Block.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Block.cpp.i
+.PHONY : src/Block.cpp.i
+
+src/Block.s: src/Block.cpp.s
+
+.PHONY : src/Block.s
+
+# target to generate assembly for a file
+src/Block.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Block.cpp.s
+.PHONY : src/Block.cpp.s
+
+src/BlockRender.o: src/BlockRender.cpp.o
+
+.PHONY : src/BlockRender.o
+
+# target to build an object file
+src/BlockRender.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/BlockRender.cpp.o
+.PHONY : src/BlockRender.cpp.o
+
+src/BlockRender.i: src/BlockRender.cpp.i
+
+.PHONY : src/BlockRender.i
+
+# target to preprocess a source file
+src/BlockRender.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/BlockRender.cpp.i
+.PHONY : src/BlockRender.cpp.i
+
+src/BlockRender.s: src/BlockRender.cpp.s
+
+.PHONY : src/BlockRender.s
+
+# target to generate assembly for a file
+src/BlockRender.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/BlockRender.cpp.s
+.PHONY : src/BlockRender.cpp.s
+
+src/ChunkData.o: src/ChunkData.cpp.o
+
+.PHONY : src/ChunkData.o
+
+# target to build an object file
+src/ChunkData.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ChunkData.cpp.o
+.PHONY : src/ChunkData.cpp.o
+
+src/ChunkData.i: src/ChunkData.cpp.i
+
+.PHONY : src/ChunkData.i
+
+# target to preprocess a source file
+src/ChunkData.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ChunkData.cpp.i
+.PHONY : src/ChunkData.cpp.i
+
+src/ChunkData.s: src/ChunkData.cpp.s
+
+.PHONY : src/ChunkData.s
+
+# target to generate assembly for a file
+src/ChunkData.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ChunkData.cpp.s
+.PHONY : src/ChunkData.cpp.s
+
+src/Frustum.o: src/Frustum.cpp.o
+
+.PHONY : src/Frustum.o
+
+# target to build an object file
+src/Frustum.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Frustum.cpp.o
+.PHONY : src/Frustum.cpp.o
+
+src/Frustum.i: src/Frustum.cpp.i
+
+.PHONY : src/Frustum.i
+
+# target to preprocess a source file
+src/Frustum.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Frustum.cpp.i
+.PHONY : src/Frustum.cpp.i
+
+src/Frustum.s: src/Frustum.cpp.s
+
+.PHONY : src/Frustum.s
+
+# target to generate assembly for a file
+src/Frustum.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Frustum.cpp.s
+.PHONY : src/Frustum.cpp.s
+
+src/Level.o: src/Level.cpp.o
+
+.PHONY : src/Level.o
+
+# target to build an object file
+src/Level.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Level.cpp.o
+.PHONY : src/Level.cpp.o
+
+src/Level.i: src/Level.cpp.i
+
+.PHONY : src/Level.i
+
+# target to preprocess a source file
+src/Level.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Level.cpp.i
+.PHONY : src/Level.cpp.i
+
+src/Level.s: src/Level.cpp.s
+
+.PHONY : src/Level.s
+
+# target to generate assembly for a file
+src/Level.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Level.cpp.s
+.PHONY : src/Level.cpp.s
+
+src/LevelRender.o: src/LevelRender.cpp.o
+
+.PHONY : src/LevelRender.o
+
+# target to build an object file
+src/LevelRender.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/LevelRender.cpp.o
+.PHONY : src/LevelRender.cpp.o
+
+src/LevelRender.i: src/LevelRender.cpp.i
+
+.PHONY : src/LevelRender.i
+
+# target to preprocess a source file
+src/LevelRender.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/LevelRender.cpp.i
+.PHONY : src/LevelRender.cpp.i
+
+src/LevelRender.s: src/LevelRender.cpp.s
+
+.PHONY : src/LevelRender.s
+
+# target to generate assembly for a file
+src/LevelRender.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/LevelRender.cpp.s
+.PHONY : src/LevelRender.cpp.s
+
+src/NBT.o: src/NBT.cpp.o
+
+.PHONY : src/NBT.o
+
+# target to build an object file
+src/NBT.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/NBT.cpp.o
+.PHONY : src/NBT.cpp.o
+
+src/NBT.i: src/NBT.cpp.i
+
+.PHONY : src/NBT.i
+
+# target to preprocess a source file
+src/NBT.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/NBT.cpp.i
+.PHONY : src/NBT.cpp.i
+
+src/NBT.s: src/NBT.cpp.s
+
+.PHONY : src/NBT.s
+
+# target to generate assembly for a file
+src/NBT.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/NBT.cpp.s
+.PHONY : src/NBT.cpp.s
+
+src/NibbleArray.o: src/NibbleArray.cpp.o
+
+.PHONY : src/NibbleArray.o
+
+# target to build an object file
+src/NibbleArray.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/NibbleArray.cpp.o
+.PHONY : src/NibbleArray.cpp.o
+
+src/NibbleArray.i: src/NibbleArray.cpp.i
+
+.PHONY : src/NibbleArray.i
+
+# target to preprocess a source file
+src/NibbleArray.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/NibbleArray.cpp.i
+.PHONY : src/NibbleArray.cpp.i
+
+src/NibbleArray.s: src/NibbleArray.cpp.s
+
+.PHONY : src/NibbleArray.s
+
+# target to generate assembly for a file
+src/NibbleArray.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/NibbleArray.cpp.s
+.PHONY : src/NibbleArray.cpp.s
+
+src/QuadBuilder.o: src/QuadBuilder.cpp.o
+
+.PHONY : src/QuadBuilder.o
+
+# target to build an object file
+src/QuadBuilder.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/QuadBuilder.cpp.o
+.PHONY : src/QuadBuilder.cpp.o
+
+src/QuadBuilder.i: src/QuadBuilder.cpp.i
+
+.PHONY : src/QuadBuilder.i
+
+# target to preprocess a source file
+src/QuadBuilder.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/QuadBuilder.cpp.i
+.PHONY : src/QuadBuilder.cpp.i
+
+src/QuadBuilder.s: src/QuadBuilder.cpp.s
+
+.PHONY : src/QuadBuilder.s
+
+# target to generate assembly for a file
+src/QuadBuilder.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/QuadBuilder.cpp.s
+.PHONY : src/QuadBuilder.cpp.s
+
+src/Region.o: src/Region.cpp.o
+
+.PHONY : src/Region.o
+
+# target to build an object file
+src/Region.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Region.cpp.o
+.PHONY : src/Region.cpp.o
+
+src/Region.i: src/Region.cpp.i
+
+.PHONY : src/Region.i
+
+# target to preprocess a source file
+src/Region.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Region.cpp.i
+.PHONY : src/Region.cpp.i
+
+src/Region.s: src/Region.cpp.s
+
+.PHONY : src/Region.s
+
+# target to generate assembly for a file
+src/Region.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Region.cpp.s
+.PHONY : src/Region.cpp.s
+
+src/Section.o: src/Section.cpp.o
+
+.PHONY : src/Section.o
+
+# target to build an object file
+src/Section.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Section.cpp.o
+.PHONY : src/Section.cpp.o
+
+src/Section.i: src/Section.cpp.i
+
+.PHONY : src/Section.i
+
+# target to preprocess a source file
+src/Section.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Section.cpp.i
+.PHONY : src/Section.cpp.i
+
+src/Section.s: src/Section.cpp.s
+
+.PHONY : src/Section.s
+
+# target to generate assembly for a file
+src/Section.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Section.cpp.s
+.PHONY : src/Section.cpp.s
+
+src/SectionRender.o: src/SectionRender.cpp.o
+
+.PHONY : src/SectionRender.o
+
+# target to build an object file
+src/SectionRender.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SectionRender.cpp.o
+.PHONY : src/SectionRender.cpp.o
+
+src/SectionRender.i: src/SectionRender.cpp.i
+
+.PHONY : src/SectionRender.i
+
+# target to preprocess a source file
+src/SectionRender.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SectionRender.cpp.i
+.PHONY : src/SectionRender.cpp.i
+
+src/SectionRender.s: src/SectionRender.cpp.s
+
+.PHONY : src/SectionRender.s
+
+# target to generate assembly for a file
+src/SectionRender.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SectionRender.cpp.s
+.PHONY : src/SectionRender.cpp.s
+
+src/Texture.o: src/Texture.cpp.o
+
+.PHONY : src/Texture.o
+
+# target to build an object file
+src/Texture.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Texture.cpp.o
+.PHONY : src/Texture.cpp.o
+
+src/Texture.i: src/Texture.cpp.i
+
+.PHONY : src/Texture.i
+
+# target to preprocess a source file
+src/Texture.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Texture.cpp.i
+.PHONY : src/Texture.cpp.i
+
+src/Texture.s: src/Texture.cpp.s
+
+.PHONY : src/Texture.s
+
+# target to generate assembly for a file
+src/Texture.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Texture.cpp.s
+.PHONY : src/Texture.cpp.s
+
+src/TextureManager.o: src/TextureManager.cpp.o
+
+.PHONY : src/TextureManager.o
+
+# target to build an object file
+src/TextureManager.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TextureManager.cpp.o
+.PHONY : src/TextureManager.cpp.o
+
+src/TextureManager.i: src/TextureManager.cpp.i
+
+.PHONY : src/TextureManager.i
+
+# target to preprocess a source file
+src/TextureManager.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TextureManager.cpp.i
+.PHONY : src/TextureManager.cpp.i
+
+src/TextureManager.s: src/TextureManager.cpp.s
+
+.PHONY : src/TextureManager.s
+
+# target to generate assembly for a file
+src/TextureManager.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TextureManager.cpp.s
+.PHONY : src/TextureManager.cpp.s
+
+src/World.o: src/World.cpp.o
+
+.PHONY : src/World.o
+
+# target to build an object file
+src/World.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/World.cpp.o
+.PHONY : src/World.cpp.o
+
+src/World.i: src/World.cpp.i
+
+.PHONY : src/World.i
+
+# target to preprocess a source file
+src/World.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/World.cpp.i
+.PHONY : src/World.cpp.i
+
+src/World.s: src/World.cpp.s
+
+.PHONY : src/World.s
+
+# target to generate assembly for a file
+src/World.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/World.cpp.s
+.PHONY : src/World.cpp.s
+
+src/WorldRender.o: src/WorldRender.cpp.o
+
+.PHONY : src/WorldRender.o
+
+# target to build an object file
+src/WorldRender.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/WorldRender.cpp.o
+.PHONY : src/WorldRender.cpp.o
+
+src/WorldRender.i: src/WorldRender.cpp.i
+
+.PHONY : src/WorldRender.i
+
+# target to preprocess a source file
+src/WorldRender.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/WorldRender.cpp.i
+.PHONY : src/WorldRender.cpp.i
+
+src/WorldRender.s: src/WorldRender.cpp.s
+
+.PHONY : src/WorldRender.s
+
+# target to generate assembly for a file
+src/WorldRender.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/WorldRender.cpp.s
+.PHONY : src/WorldRender.cpp.s
+
+src/camera.o: src/camera.cpp.o
+
+.PHONY : src/camera.o
+
+# target to build an object file
+src/camera.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/camera.cpp.o
+.PHONY : src/camera.cpp.o
+
+src/camera.i: src/camera.cpp.i
+
+.PHONY : src/camera.i
+
+# target to preprocess a source file
+src/camera.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/camera.cpp.i
+.PHONY : src/camera.cpp.i
+
+src/camera.s: src/camera.cpp.s
+
+.PHONY : src/camera.s
+
+# target to generate assembly for a file
+src/camera.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/camera.cpp.s
+.PHONY : src/camera.cpp.s
+
+src/gzip.o: src/gzip.cpp.o
+
+.PHONY : src/gzip.o
+
+# target to build an object file
+src/gzip.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gzip.cpp.o
+.PHONY : src/gzip.cpp.o
+
+src/gzip.i: src/gzip.cpp.i
+
+.PHONY : src/gzip.i
+
+# target to preprocess a source file
+src/gzip.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gzip.cpp.i
+.PHONY : src/gzip.cpp.i
+
+src/gzip.s: src/gzip.cpp.s
+
+.PHONY : src/gzip.s
+
+# target to generate assembly for a file
+src/gzip.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gzip.cpp.s
+.PHONY : src/gzip.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/zlib.o: src/zlib.cpp.o
+
+.PHONY : src/zlib.o
+
+# target to build an object file
+src/zlib.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/zlib.cpp.o
+.PHONY : src/zlib.cpp.o
+
+src/zlib.i: src/zlib.cpp.i
+
+.PHONY : src/zlib.i
+
+# target to preprocess a source file
+src/zlib.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/zlib.cpp.i
+.PHONY : src/zlib.cpp.i
+
+src/zlib.s: src/zlib.cpp.s
+
+.PHONY : src/zlib.s
+
+# target to generate assembly for a file
+src/zlib.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/zlib.cpp.s
+.PHONY : src/zlib.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -132,6 +711,69 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... boost_python"
+	@echo "... boost_filesystem"
+	@echo "... main"
+	@echo "... boost_system"
+	@echo "... src/Block.o"
+	@echo "... src/Block.i"
+	@echo "... src/Block.s"
+	@echo "... src/BlockRender.o"
+	@echo "... src/BlockRender.i"
+	@echo "... src/BlockRender.s"
+	@echo "... src/ChunkData.o"
+	@echo "... src/ChunkData.i"
+	@echo "... src/ChunkData.s"
+	@echo "... src/Frustum.o"
+	@echo "... src/Frustum.i"
+	@echo "... src/Frustum.s"
+	@echo "... src/Level.o"
+	@echo "... src/Level.i"
+	@echo "... src/Level.s"
+	@echo "... src/LevelRender.o"
+	@echo "... src/LevelRender.i"
+	@echo "... src/LevelRender.s"
+	@echo "... src/NBT.o"
+	@echo "... src/NBT.i"
+	@echo "... src/NBT.s"
+	@echo "... src/NibbleArray.o"
+	@echo "... src/NibbleArray.i"
+	@echo "... src/NibbleArray.s"
+	@echo "... src/QuadBuilder.o"
+	@echo "... src/QuadBuilder.i"
+	@echo "... src/QuadBuilder.s"
+	@echo "... src/Region.o"
+	@echo "... src/Region.i"
+	@echo "... src/Region.s"
+	@echo "... src/Section.o"
+	@echo "... src/Section.i"
+	@echo "... src/Section.s"
+	@echo "... src/SectionRender.o"
+	@echo "... src/SectionRender.i"
+	@echo "... src/SectionRender.s"
+	@echo "... src/Texture.o"
+	@echo "... src/Texture.i"
+	@echo "... src/Texture.s"
+	@echo "... src/TextureManager.o"
+	@echo "... src/TextureManager.i"
+	@echo "... src/TextureManager.s"
+	@echo "... src/World.o"
+	@echo "... src/World.i"
+	@echo "... src/World.s"
+	@echo "... src/WorldRender.o"
+	@echo "... src/WorldRender.i"
+	@echo "... src/WorldRender.s"
+	@echo "... src/camera.o"
+	@echo "... src/camera.i"
+	@echo "... src/camera.s"
+	@echo "... src/gzip.o"
+	@echo "... src/gzip.i"
+	@echo "... src/gzip.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/zlib.o"
+	@echo "... src/zlib.i"
+	@echo "... src/zlib.s"
 .PHONY : help
 
 

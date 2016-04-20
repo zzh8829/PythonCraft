@@ -10,7 +10,6 @@ find_package(Boost ${BoostVersion} COMPONENTS ${BoostComponents})
 
 macro(_BOOST_FOUND Component)
   if(NOT Boost_${Component}_FOUND)
-    message(STATUS "Could NOT find Boost ${Component}")
     set(Boost_FOUND OFF)
   endif()
 endmacro()
@@ -25,6 +24,7 @@ if(Boost_FOUND)
 endif()
 
 # Download and Build Boost
+message(STATUS "Using custom Boost")
 
 # Create build folder name derived from version
 string(REGEX REPLACE "beta\\.([0-9])$" "beta\\1" BoostFolderName ${BoostVersion})
@@ -175,7 +175,7 @@ foreach(Component ${BoostComponents})
 
   # hanle wrong inlcude directory in mac homebrew python 
   if(APPLE AND (Component STREQUAL "python"))
-    execute_process(COMMAND python -c "from __future__ import print_function; import distutils.sysconfig; print(distutils.sysconfig.get_python_inc(True))" OUTPUT_VARIABLE PYINCLUDE OUTPUT_STRIP_TRAILING_WHITESPACE)
+    execute_process(COMMAND python3 -c "from __future__ import print_function; import distutils.sysconfig; print(distutils.sysconfig.get_python_inc(True))" OUTPUT_VARIABLE PYINCLUDE OUTPUT_STRIP_TRAILING_WHITESPACE)
 
     list(APPEND b2Args cxxflags=-I${PYINCLUDE})
   endif()
@@ -222,6 +222,7 @@ foreach(Component ${BoostComponents})
                           LINKER_LANGUAGE CXX)
   endif()
   set(Boost${CamelCaseComponent}Libs Boost${CamelCaseComponent})
+
   if(Component STREQUAL "locale")
     if(APPLE)
       find_library(IconvLib iconv)
@@ -253,7 +254,7 @@ foreach(Component ${BoostComponents})
       set(Boost${CamelCaseComponent}Libs Boost${CamelCaseComponent})
     endif()
   endif()
-  list(APPEND Boost_LIBRARIES Boost${CamelCaseComponent}Libs)
+  list(APPEND Boost_LIBRARIES ${Boost${CamelCaseComponent}Libs})
 endforeach()
 
 set(Boost_INCLUDE_DIRS ${BoostSourceDir})

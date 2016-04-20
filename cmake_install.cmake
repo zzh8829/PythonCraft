@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Zihao/Projects/Python/PythonCraft
+# Install script for directory: /Users/Zihao/projects/Python/PythonCraft
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Zihao/Projects/Python/PythonCraft/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Zihao/projects/Python/PythonCraft/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
