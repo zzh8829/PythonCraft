@@ -28,5 +28,12 @@
 *.app
 
 __pycache__/
+
+*.pyd
+
 CMakeFiles/
+CMakeCache.txt
+
 saves/
+
+lib/
