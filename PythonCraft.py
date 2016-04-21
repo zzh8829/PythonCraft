@@ -3,6 +3,7 @@ import os
 from math import *
 import libmain as main
 level = main.CLevel('saves/','Lormierville')
+level = main.CLevel('saves/','house')
 #level = main.CLevel('C:/Users/Zihao/AppData/Roaming/.minecraft/saves/','exmaple')
 wd = level.getWorld()
 render = main.CLevelRender(level)
