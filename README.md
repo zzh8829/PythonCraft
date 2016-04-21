@@ -21,8 +21,18 @@ Required python library: pygame pyopengl
 
 Required c++ library: libsdl libpng libpython libopengl
 
+Installing Library on Mac
+```bash
+brew install libpnng
+brew install python3
+brew install sdl sdl_ttf sdl_image sdl_mixer
+pip install hg+http://bitbucket.org/pygame/pygame
+pip install pyopengl
+```
+
 Boost will be installed with make script 
 
+Build Project
 ```bash
 cmake -G "Unix Makefiles"
 make
