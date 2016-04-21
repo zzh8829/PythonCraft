@@ -5,6 +5,7 @@ mLevel(level)
 {
 	mWorldRender = new WorldRender(level,this);
 	mFrustum = new Frustum();
+	mNewX = mNewY	= mNewZ = 0;
 }
 
 LevelRender::~LevelRender()

@@ -66,7 +66,7 @@ void loadTextureRec(TextureManager* tm, filesystem::path dir_path)
     {
       loadTextureRec(tm, itr->path());
     }
-    else if ( itr->path().extension() == "png" ) // see below
+    else if ( itr->path().extension() == ".png" ) // see below
     {
     	string file = itr->path().string();
     	tm->loadTexture(file);

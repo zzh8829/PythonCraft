@@ -19,7 +19,7 @@ void Level::loadLevel()
 {
 	NBT::TagCompound* root = NBT::ReadNBTFromGzipFile(mDirectory+"level.dat");
 
-	NBT::Print(cout,root);
+	NBT::Print(cerr,root);
 
 	NBT::TagCompound* data = root->getCompound("Data");
 

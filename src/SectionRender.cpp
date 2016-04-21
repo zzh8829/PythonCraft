@@ -26,7 +26,8 @@ void SectionRender::update()
 			if(ty>=0 && ty<16)
 				mAdjSections[i] = mLevel->getWorld()->getChunkData(tx,tz)->getSection(ty);
 		}
-		
+
+
 		//if(mY != 5) return;
 		//mLevel->logfile << "Updating Section " << mX<< " " << mY<< " " << mZ << std::endl;
 		//mLevel->logfile.flush();
@@ -43,6 +44,7 @@ void SectionRender::update()
 
 		BlockRender br(mLevel,mX,mY,mZ);
 
+
 		for(int x=0;x!=16;x++)
 		{
 			for(int y=0;y!=16;y++)
@@ -50,6 +52,7 @@ void SectionRender::update()
 				for(int z=0;z!=16;z++)
 				{
 					uint8_t id = mSection->getBlockId(x,y,z);
+
 					if(id)
 					{
 						if(!br.renderBlock(id,x,y,z))

@@ -128,7 +128,13 @@ if(NOT PNG_FOUND)
   message(FATAL_ERROR "PNG NOT FOUND")
 endif()
 
-include_directories(${PNG_INCLUDE_DIRS})
+if(APPLE)
+  # weird mac shit 
+  include_directories("/usr/local/include/libpng16")
+else()
+  include_directories(${PNG_INCLUDE_DIRS})
+endif()
+
 list(APPEND LIB_FILES ${PNG_LIBRARIES})
 add_definitions(${PNG_DEFINITIONS})
 
@@ -149,6 +155,9 @@ list(APPEND LIB_FILES ${PYTHON_LIBRARIES})
 # =================
 
 if(GEN_LIB)
+  if(APPLE)
+    set(CMAKE_SHARED_LIBRARY_SUFFIX ".so")
+  endif(APPLE)
   add_library(main SHARED ${SOURCE_FILES} ${HEADER_FILES} )
 else()
   add_executable(main ${SOURCE_FILES} ${HEADER_FILES} )

@@ -236,11 +236,12 @@ void WorldRender::processUpdateQueue()
 
 	int cap = MAXUPDATE;
 	if(cap > mUpdateQueue.size()) cap = mUpdateQueue.size();
+	
 	for(int i=0;i!=cap;i++)
 	{
 		mUpdateQueue.front()->update();
 		mUpdateQueue.front()->inQueue = false;
-   		mUpdateQueue.pop_front();
+   	mUpdateQueue.pop_front();
 	}
 }
 

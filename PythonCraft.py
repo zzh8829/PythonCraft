@@ -1,9 +1,8 @@
 import OpenGL
 import os
 from math import *
-#os.system("cpy.bat")
-import main
-level = main.CLevel('saves/','broville')
+import libmain as main
+level = main.CLevel('saves/','Lormierville')
 #level = main.CLevel('C:/Users/Zihao/AppData/Roaming/.minecraft/saves/','exmaple')
 wd = level.getWorld()
 render = main.CLevelRender(level)
@@ -22,9 +21,10 @@ import Tessellator
 
 import time
 
-#SCREEN_SIZE = 854,480
-SCREEN_SIZE = 1920,1080
+SCREEN_SIZE = 854,480
+#SCREEN_SIZE = 1920,1080
 SCREEN_FLAG = OPENGL|DOUBLEBUF|HWSURFACE|FULLSCREEN
+SCREEN_FLAG = OPENGL|DOUBLEBUF|HWSURFACE
 pygame.init()
 font = pygame.font.SysFont("Arial",15)
 main.SetVsync(False)
@@ -445,7 +445,7 @@ class Game:
 		#self.gui.render()
 
 	def renderworld(self,playerPos):
-		if 1:
+		if 0:
 			vii = wd.getLoadedRegions()
 			cr = playerPos.toList()
 			for i in range(len(cr)):

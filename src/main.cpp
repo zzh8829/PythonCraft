@@ -207,7 +207,7 @@ int main(int argc, char* argv[])
 
 	//ResizeScreen(854,480);
 
-	Level* l = new Level("saves/", "city");
+	Level* l = new Level("saves/", "house");
 
 	lr = new LevelRender(l);
 	
@@ -252,7 +252,7 @@ int main(int argc, char* argv[])
 using namespace boost::python;
 
 BOOST_PYTHON_MEMBER_FUNCTION_OVERLOADS(QB_begin_overloads, QuadBuilder::begin, 0,2)
-BOOST_PYTHON_MODULE(main)
+BOOST_PYTHON_MODULE(libmain)
 {
 
 	def("SetVsync",&SetVsync);

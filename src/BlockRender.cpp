@@ -173,7 +173,7 @@ void BlockRender::renderBlockNormal(Block* block,int x,int y,int z)
 		g = color >> 8 & 255;
 		b = color & 255;
 	}
-	if( shouldRender(block,x,y,z,0 ))renderTopFace(block,x,y,z,r,g,b);
+	if( shouldRender(block,x,y,z,0 )) renderTopFace(block,x,y,z,r,g,b);
 	if( shouldRender(block,x,y,z,1 ))renderBotFace(block,x,y,z,r,g,b);
 	if( shouldRender(block,x,y,z,2 ))renderZPosFace(block,x,y,z,r,g,b);
 	if( shouldRender(block,x,y,z,3 ))renderXPosFace(block,x,y,z,r,g,b);
@@ -452,7 +452,7 @@ bool BlockRender::shouldRender(Block* block,int x,int y,int z,int face)
 		if(!section) return 1;
 	}
 	int id = section->getBlockId(tx&15,ty&15,tz&15);
-	return !id || (Block::BlockList[id]->transparent == 1 && id!=block->id);
+	return !id || block->transparent || (Block::BlockList[id] && Block::BlockList[id]->transparent);
 }
 
 int BlockRender::getAdjId(Block* block,int x,int y,int z,int face)
