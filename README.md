@@ -15,7 +15,7 @@ Putting/removing blocks
 Build
 ========
 
-Recommand Python 3 (2 is not tested)
+Recommand Python 3 on Mac OS (Windows or Python 2 are not supported)
 
 Required python library: pygame pyopengl
 
