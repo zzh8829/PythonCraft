@@ -34,7 +34,7 @@ Boost will be installed with make script
 
 Build Project
 ```bash
-cmake -G "Unix Makefiles"
+cmake -G "Unix Makefiles" .
 make
 python PythonCraft.py
 ```
