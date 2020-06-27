@@ -1,4 +1,4 @@
-# PythonCraft
+[![Run on Repl.it](https://repl.it/badge/github/zzh8829/PythonCraft)](https://repl.it/github/zzh8829/PythonCraft)# PythonCraft
 Python Minecraft Clone
 
 Demo
